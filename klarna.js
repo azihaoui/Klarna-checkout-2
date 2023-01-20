@@ -4,7 +4,6 @@ function getKlarnaAuth() {
     const username = process.env.PUBLIC_KEY
     const password = process.env.SECRET_KEY
 
-
     const auth = 
         'Basic ' + Buffer.from(username + ':' + password).toString('base64')
         return auth
